@@ -91,15 +91,15 @@ const editNoteByIdHandler = (request, h) => {
       message: 'Catatan berhasil diperbarui',
     });
     response.code(200);
-    return respponse;
+    return response;
   }
 
   const response = h.response({
     status: 'fail',
-    message: 'Gagal memperbari catatan. Id tidak ditemukan',
+    message: 'Gagal memperbarui catatan. Id tidak ditemukan',
   });
   response.code(400);
-  return responses;
+  return response;
 };
 
 const deleteNoteByIdHandler = (request, h) => {
